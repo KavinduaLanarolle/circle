@@ -13,6 +13,14 @@ while total<=120:
         if pass_m in x and defer in x and fail in x :
             if pass_m==120:
                 print('Progress')
+                num_rows = int(input("Enter the number of rows"));
+                for i in range(0, num_rows):
+                    for j in range(0, num_rows-i-1):
+                        print(end=" ")
+                        for j in  range(0, i+1):
+                            print("*", end=" ")
+                    print()
+                
             elif pass_m==100:
                 print('Progress-module trailer')
             elif pass_m<=80 and fail<=60:
@@ -25,3 +33,4 @@ while total<=120:
         print('Intergers required')
 else:
     print('Total incorrect')
+
